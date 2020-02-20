@@ -21,7 +21,7 @@ def validate_excel_file():
     f.save(path)
     data = validate(path,f.filename.split('---')[0])
     if data['succeed'] == False:
-        return jsonify(d)
+        return jsonify(data)
 
     d = {'value': json.loads(data['value']),
             'report': data['report'],
