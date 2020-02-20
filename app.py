@@ -15,11 +15,11 @@ def hello_world():
 @app.route('/validate', methods=['POST'])
 def validate_excel_file():
     f = request.files['file']
-    print('got file')
-    path = os.path.join(UPLOAD_FOLDER,f.filename)
+    filename = request.headers.get("filename")
+    path = os.path.join(UPLOAD_FOLDER,filename)
 
     f.save(path)
-    data = validate(path,f.filename.split('---')[0])
+    data = validate(path,filename.split('---')[0])
     if data['succeed'] == False:
         return jsonify(data)
 
