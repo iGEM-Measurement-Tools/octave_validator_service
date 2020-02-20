@@ -1,6 +1,6 @@
 backcall==0.1.0
 decorator==4.4.1
-Flask==0.10.1
+Flask==1.0
 ipykernel==5.1.4
 ipyparallel==6.2.4
 ipython==7.0.0
