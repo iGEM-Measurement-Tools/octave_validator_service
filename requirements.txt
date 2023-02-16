@@ -9,7 +9,7 @@ itsdangerous==1.1.0
 jedi==0.16.0
 Jinja2==2.11.3
 jupyter-client==5.3.4
-jupyter-core==4.6.3
+jupyter-core==4.11.2
 MarkupSafe==1.1.1
 metakernel==0.24.3
 numpy==1.22.0
